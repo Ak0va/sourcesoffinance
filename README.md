@@ -3,21 +3,30 @@
 <title>LGEGX</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
   background-image: url('https://www.plantemoran.com/-/media/images/insights-images/2018/04/thinking-about-becoming-a-smart-city.jpg?h=704&w=1100&la=en&hash=0F4F54BBECD3E501765A064202A24F8851D74E04');
-  min-height: 100%;
+  height: 1000px;
   background-position: center;
   background-size: cover;
 }
   
   
+  .w3-display-middle{
+     position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+    
+  }
+  
   .circle {position:absolute;
- top: 1000;
+ top: 100;
  left:100;
  width:100%;
  height:100%; 
@@ -131,16 +140,17 @@ nav > ul > li > a {
 </style>
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+<div class="bgimg">
+  <div class="w3-display-topleft" style="color:white;">
     LGEG
   </div>
   <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">Lean Startup</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">or how to test hypotheses around your business idea</p>
+    <h1  style="color:white;">Lean Startup</h1>
+    <hr  style="margin:auto;width:40%">
+    <p >or how to test hypotheses around your business idea</p>
   </div>
 </div>
+  
   
   <!-- <div class="circle"> </div> -->
    
