@@ -7,8 +7,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
+
+
+  
+  /* .bgimg {
   background-image: url('https://www.plantemoran.com/-/media/images/insights-images/2018/04/thinking-about-becoming-a-smart-city.jpg?h=704&w=1100&la=en&hash=0F4F54BBECD3E501765A064202A24F8851D74E04');
   height: 1000px;
   background-position: center;
@@ -22,30 +24,33 @@ body, html {height: 100%}
   width: 100%;
   text-align: center;
   font-size: 25px;
-    
+   
   }
   
-  .circle {position:absolute;
- top: 100;
- left:100;
- width:100%;
- height:100%; 
-clip-path: circle(30px at left 30px);
-background-color: #a54a7b;
-    
-  }
- 
-   .bigcircle {position:absolute;
- top: 1;
- left: 0;
- width:100%;
- height:100%; 
-clip-path: circle(500px at right 100px);
-background-color: #a54a7b;
-     background-position: center;
-  background-size: cover;
-    
-  } 
+  */
+  
+  
+  
+.container1 {
+  position: relative;
+}
+
+.center1 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+img1 { 
+  width: 100%;
+  height:100%
+  opacity: 0.3;
+}
+  
+  
+
   
   
     .img-rounded {
@@ -90,7 +95,7 @@ nav > ul > li > a {
     width: 100%;
     height: 0;    
     left:0;
-    bottom:0px; /*Change this to increase/decrease distance*/
+    bottom:0px; 
     border-bottom: 2px solid #000;  
 }
   
@@ -135,11 +140,20 @@ nav > ul > li > a {
   p {color: white;
   font-size: 1.2em;}
   
-  
+
   
 </style>
 <body>
 
+
+
+<div class="container1" style="text-align: center;">
+  <img src="https://www.plantemoran.com/-/media/images/insights-images/2018/04/thinking-about-becoming-a-smart-city.jpg?h=704&w=1100&la=en&hash=0F4F54BBECD3E501765A064202A24F8851D74E04"  width="1000" height="1000" class="img1">
+  <div class="center1">Lean Startup</div>
+</div> 
+  
+    <!-- 
+  
 <div class="bgimg">
   <div class="w3-display-topleft" style="color:white;">
     LGEG
@@ -152,7 +166,7 @@ nav > ul > li > a {
 </div>
   
   
-  <!-- <div class="circle"> </div> -->
+<div class="circle"> </div>   --> 
    
   
 <p style="text-align:center;"><span>To understand the main principles of
@@ -165,13 +179,13 @@ Lean Startup, it's better to start with practice.</span></p>
 <p></p>
 <p><span style="color: rgb(198, 123, 165);"><br></span></p>
 <p style="text-align:center; text-size:20;"><span style="color: rgb(198, 123, 165);">What kind of features will you include in it?</span></p>
-  
-  <!-- <div class="bigcircle"> </div> -->
+
+  <!-- <div class="bigcircle"> </div> 
    
 
 
   
-<!--  
+
   <nav>
     <ul>
         <li><a class="border" href="#">Special menu </a> <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/meat-on-bone_1f356.png" class="img-list" >
@@ -190,9 +204,8 @@ Lean Startup, it's better to start with practice.</span></p>
   <p></p>
   <p></p>
   <p></p>
-  <p></p>
+  <p></p> -->
   
-  -->
   
   <div id="growContainer">
 <div class="grow" style="background-color:#703254;"> <div class="centre"><p>Special Menu</p></div> <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/meat-on-bone_1f356.png" class="img-list" > </div>
@@ -201,6 +214,7 @@ Lean Startup, it's better to start with practice.</span></p>
 <div class="grow" style="background-color:#c379a1;"> <div class="centre"><p>Logo</p></div> <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/cyclone_1f300.png" class="img-list"></div>
 </div>
   
+
   
   
   
