@@ -29,18 +29,104 @@ body,h1 {font-family: "Raleway", sans-serif}
   
   */
   
+ .arrow {
+  border: solid #703254;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 30px;
+  text-align: center;
+ 
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.rotatingText {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+}
+
+.rotatingText-adjective {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  left: 0;
+  margin-bottom: 0;
+  margin-top: 50px;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+}
+
+.rotatingText-adjective:nth-of-type(1) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+}
+
+.rotatingText-adjective:nth-of-type(2) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 1.75s;
+}
+
+.rotatingText-adjective:nth-of-type(3) {
+  animation-name: rotate-last;
+  animation-duration: 1.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
   
+  20%, 80% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -25px, 0);
+  }
+}
+
+@keyframes rotate-last {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  50%, 100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+} 
   
 .container1 {
   position: relative;
 }
 
-.center1 {
+.rotatingText-adjective {
   position: absolute;
   top: 50%;
   width: 100%;
   text-align: center;
   font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
 }
 
 img1 { 
@@ -108,6 +194,7 @@ nav > ul > li > a {
 	display: table;
 	width:100%;
 	height:35%;
+  color:white;
 }
 .grow{
 	display: table-cell;
@@ -137,10 +224,12 @@ nav > ul > li > a {
   transform: translate(-50%, -50%);
     
 }
-  p {color: white;
-  font-size: 1.2em;}
+ 
+ 
   
-
+  .gototest {
+    height: 150px;
+  }
   
 </style>
 <body>
@@ -149,8 +238,15 @@ nav > ul > li > a {
 
 <div class="container1" style="text-align: center;">
   <img src="https://www.plantemoran.com/-/media/images/insights-images/2018/04/thinking-about-becoming-a-smart-city.jpg?h=704&w=1100&la=en&hash=0F4F54BBECD3E501765A064202A24F8851D74E04"  width="1000" height="1000" class="img1">
-  <div class="center1">Lean Startup</div>
+ <p>
+  <span class="rotatingText-adjective">Lean Startup</span>
+  <span class="rotatingText-adjective">Business Studies</span>
+  <span class="rotatingText-adjective">Let's Start 👌</span>
+</p>
 </div> 
+  
+
+
   
     <!-- 
   
@@ -164,7 +260,7 @@ nav > ul > li > a {
     <p >or how to test hypotheses around your business idea</p>
   </div>
 </div>
-  
+   <div class="center1" >Lean Startup</div>
   
 <div class="circle"> </div>   --> 
    
@@ -215,7 +311,11 @@ Lean Startup, it's better to start with practice.</span></p>
 </div>
   
 
-  
+ <div class="gototest" style="text-align: center; color: rgb(198, 123, 165);">
+   <p> </p>
+   <p> Answer the question below </p>
+<p><i class="arrow down"></i></p>
+  </div>
   
   
 </body>
