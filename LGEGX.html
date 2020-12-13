@@ -7,8 +7,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
+
+
+  
+  /* .bgimg {
   background-image: url('https://www.plantemoran.com/-/media/images/insights-images/2018/04/thinking-about-becoming-a-smart-city.jpg?h=704&w=1100&la=en&hash=0F4F54BBECD3E501765A064202A24F8851D74E04');
   height: 1000px;
   background-position: center;
@@ -22,30 +24,119 @@ body, html {height: 100%}
   width: 100%;
   text-align: center;
   font-size: 25px;
-    
+   
   }
   
-  .circle {position:absolute;
- top: 100;
- left:100;
- width:100%;
- height:100%; 
-clip-path: circle(30px at left 30px);
-background-color: #a54a7b;
-    
-  }
+  */
+  
+ .arrow {
+  border: solid #703254;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 30px;
+  text-align: center;
  
-   .bigcircle {position:absolute;
- top: 1;
- left: 0;
- width:100%;
- height:100%; 
-clip-path: circle(500px at right 100px);
-background-color: #a54a7b;
-     background-position: center;
-  background-size: cover;
-    
-  } 
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.rotatingText {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+}
+
+.rotatingText-adjective {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  left: 0;
+  margin-bottom: 0;
+  margin-top: 50px;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+}
+
+.rotatingText-adjective:nth-of-type(1) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+}
+
+.rotatingText-adjective:nth-of-type(2) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 1.75s;
+}
+
+.rotatingText-adjective:nth-of-type(3) {
+  animation-name: rotate-last;
+  animation-duration: 1.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  20%, 80% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -25px, 0);
+  }
+}
+
+@keyframes rotate-last {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  50%, 100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+} 
+  
+.container1 {
+  position: relative;
+}
+
+.rotatingText-adjective {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+img1 { 
+  width: 100%;
+  height:100%
+  opacity: 0.3;
+}
+  
+  
+
   
   
     .img-rounded {
@@ -90,7 +181,7 @@ nav > ul > li > a {
     width: 100%;
     height: 0;    
     left:0;
-    bottom:0px; /*Change this to increase/decrease distance*/
+    bottom:0px; 
     border-bottom: 2px solid #000;  
 }
   
@@ -103,6 +194,7 @@ nav > ul > li > a {
 	display: table;
 	width:100%;
 	height:35%;
+  color:white;
 }
 .grow{
 	display: table-cell;
@@ -132,14 +224,32 @@ nav > ul > li > a {
   transform: translate(-50%, -50%);
     
 }
-  p {color: white;
-  font-size: 1.2em;}
+ 
+ 
   
-  
+  .gototest {
+    height: 150px;
+  }
   
 </style>
 <body>
 
+
+
+<div class="container1" style="text-align: center;">
+  <img src="https://www.plantemoran.com/-/media/images/insights-images/2018/04/thinking-about-becoming-a-smart-city.jpg?h=704&w=1100&la=en&hash=0F4F54BBECD3E501765A064202A24F8851D74E04"  width="1000" height="1000" class="img1">
+ <p>
+  <span class="rotatingText-adjective">Lean Startup</span>
+  <span class="rotatingText-adjective">Business Studies</span>
+  <span class="rotatingText-adjective">Let's Start 👌</span>
+</p>
+</div> 
+  
+
+
+  
+    <!-- 
+  
 <div class="bgimg">
   <div class="w3-display-topleft" style="color:white;">
     LGEG
@@ -150,9 +260,9 @@ nav > ul > li > a {
     <p >or how to test hypotheses around your business idea</p>
   </div>
 </div>
+   <div class="center1" >Lean Startup</div>
   
-  
-  <!-- <div class="circle"> </div> -->
+<div class="circle"> </div>   --> 
    
   
 <p style="text-align:center;"><span>To understand the main principles of
@@ -165,13 +275,13 @@ Lean Startup, it's better to start with practice.</span></p>
 <p></p>
 <p><span style="color: rgb(198, 123, 165);"><br></span></p>
 <p style="text-align:center; text-size:20;"><span style="color: rgb(198, 123, 165);">What kind of features will you include in it?</span></p>
-  
-  <!-- <div class="bigcircle"> </div> -->
+
+  <!-- <div class="bigcircle"> </div> 
    
 
 
   
-<!--  
+
   <nav>
     <ul>
         <li><a class="border" href="#">Special menu </a> <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/meat-on-bone_1f356.png" class="img-list" >
@@ -190,9 +300,8 @@ Lean Startup, it's better to start with practice.</span></p>
   <p></p>
   <p></p>
   <p></p>
-  <p></p>
+  <p></p> -->
   
-  -->
   
   <div id="growContainer">
 <div class="grow" style="background-color:#703254;"> <div class="centre"><p>Special Menu</p></div> <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/meat-on-bone_1f356.png" class="img-list" > </div>
@@ -201,7 +310,12 @@ Lean Startup, it's better to start with practice.</span></p>
 <div class="grow" style="background-color:#c379a1;"> <div class="centre"><p>Logo</p></div> <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/cyclone_1f300.png" class="img-list"></div>
 </div>
   
-  
+
+ <div class="gototest" style="text-align: center; color: rgb(198, 123, 165);">
+   <p> </p>
+   <p> Answer the question below </p>
+<p><i class="arrow down"></i></p>
+  </div>
   
   
 </body>
