@@ -56,7 +56,7 @@ body,h1 {font-family: "Raleway", sans-serif;
   font-weight: 700;
   left: 0;
   margin-bottom: 0;
-  margin-top: 435px;
+  margin-top: 650px;
   opacity: 0;
   position: absolute;
   right: 0;
