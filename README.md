@@ -6,7 +6,153 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-body,h1 {font-family: "Raleway", sans-serif}
+body,h1 {font-family: "Raleway", sans-serif;
+  background-color:#f3f3f3}
+
+.arrow {
+  border: solid #703254;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 30px;
+  text-align: center;
+ 
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+  
+    .img1 {
+  rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  
+  
+    
+}
+ 
+
+
+
+.rotatingText {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 18px;
+ 
+}
+
+.rotatingText-adjective {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  left: 0;
+  margin-bottom: 0;
+  margin-top: 435px;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  color: #703254;
+  text-transform: uppercase;
+  top: 0;
+}
+
+.rotatingText-adjective:nth-of-type(1) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+}
+
+.rotatingText-adjective:nth-of-type(2) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 1.75s;
+}
+
+.rotatingText-adjective:nth-of-type(3) {
+  animation-name: rotate-last;
+  animation-duration: 1.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  20%, 80% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -25px, 0);
+  }
+}
+
+@keyframes rotate-last {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  50%, 100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+.arrow-container {
+  width: 60px;
+  /* cubic-bezier-easing = sine / mehr Beispiele: https://easings.net/ */
+  animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  cursor: pointer;
+  height: 20px;
+  left: 50%;
+  position:absolute;
+  padding-top:30px;
+}
+
+.arrow-down {
+  height: 6px;
+  background: rgb(198, 123, 165);
+  transform: rotate(45deg);
+  transform-origin: 0% 0%;
+  border-radius: 5px;
+}
+.arrow-down:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 100%;
+  border-radius: 5px;
+  background: rgb(198, 123, 165);
+  transform: rotate(-90deg);
+  transform-origin: 0% 100%;
+}
+
+@keyframes bounce {
+50% {
+    transform: translateY(-15px);
+  }
+}
+
+
+
 
 
   
@@ -43,6 +189,7 @@ body,h1 {font-family: "Raleway", sans-serif}
   -webkit-transform: rotate(45deg);
 }
 
+  /*
 .rotatingText {
   font-family: "Georgia", serif;
   font-style: italic;
@@ -129,11 +276,7 @@ body,h1 {font-family: "Raleway", sans-serif}
   font-size: 40px;
 }
 
-img1 { 
-  width: 100%;
-  height:100%
-  opacity: 0.3;
-}
+*/
   
   
 
@@ -162,10 +305,10 @@ img1 {
     line-height:4; 
 }
   
-  span {color: rgb(198, 123, 165); 
+/*  span {color: rgb(198, 123, 165); 
     padding:50px;
     width:200px;
-  }
+  } */
   
  
 nav > ul > li > a {
@@ -241,7 +384,7 @@ nav > ul > li > a {
  <p>
   <span class="rotatingText-adjective">Lean Startup</span>
   <span class="rotatingText-adjective">Business Studies</span>
-  <span class="rotatingText-adjective">Let's Start 👌</span>
+  <span class="rotatingText-adjective">Let's Start 🚀</span>
 </p>
 </div> 
   
@@ -265,10 +408,10 @@ nav > ul > li > a {
 <div class="circle"> </div>   --> 
    
   
-<p style="text-align:center;"><span>To understand the main principles of
+<p style="text-align:center; color: rgb(198, 123, 165);"><span>To understand the main principles of
 Lean Startup, it's better to start with practice.</span></p>
 
-<p style="text-align:center;"><span >You decide to open the first pet-friendly cafe where they serve the same food both for pets and pet-owners.</span></p>
+<p style="text-align:center;color: rgb(198, 123, 165);"><span >You decide to open the first pet-friendly cafe where they serve the same food both for pets and pet-owners.</span></p>
 <p><br></p>
 <div style="text-align: center;"><img src="https://vanillapup.com/wp-content/uploads/2018/08/RedDot-BrewHouse-Dempsey_Vanillapup@2x.jpeg" class="img-rounded" style="font-family: inherit; width: 469.741885625966px; height: 313px;">&nbsp; &nbsp;
 &nbsp;<img src="https://eatbook.sg/wp-content/uploads/2019/11/Pet-Friendly-Cafe-The-Garden-Slug-dog-982x1024.jpg" class="img-rounded" style="width: 295.2300098716683px; height: 308px;"></div>
@@ -313,9 +456,14 @@ Lean Startup, it's better to start with practice.</span></p>
 
  <div class="gototest" style="text-align: center; color: rgb(198, 123, 165);">
    <p> </p>
-   <p> Answer the question below </p>
-<p><i class="arrow down"></i></p>
-  </div>
+   <p> Answer the question below in the box</p>
+
+  
+  
+  
+ <div class="arrow-container" >
+            <div class="arrow-down" ></div>
+        </div>
   
   
 </body>
