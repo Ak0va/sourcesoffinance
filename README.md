@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1 {font-family: "Raleway", sans-serif;
-  background-color:white;}
+ }
 
 .arrow {
   border: solid #703254;
