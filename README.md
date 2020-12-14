@@ -371,7 +371,7 @@ nav > ul > li > a {
  
   
   .gototest {
-    height: 150px;
+    height: 65px;
   }
   
 </style>
@@ -457,7 +457,7 @@ Lean Startup, it's better to start with practice.</span></p>
  <div class="gototest" style="text-align: center; color: rgb(198, 123, 165);">
    <p> </p>
    <p> Answer the question below in the box</p>
-
+</div>
   
   
   
