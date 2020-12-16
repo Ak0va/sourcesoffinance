@@ -346,7 +346,7 @@ body,h1 {font-family: "Raleway", sans-serif;
 }
  
  .img-rounded {
-  opacity: 0.5;
+  opacity: 0;
 }
 
 .img-rounded:hover {
