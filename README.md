@@ -24,7 +24,63 @@ body,h1 {font-family: "Raleway", sans-serif;
 }
 
 
+.hoverme{
+  margin-left: 150px;
+   margin-top: 30px;
+  position:relative;
+}
 
+/* Arrow */
+
+.arrowhover {
+	position: relative;
+  margin: 0;
+  width: 100px;
+}
+
+.arrowhover .curve {
+	border: 2px solid #703254;
+	border-color: transparent transparent transparent #703254;
+	height: 100px;
+	width: 1200px;
+	border-radius: 230px 0 0 150px;
+  margin-left: 150px;
+}
+
+
+
+.arrowhover .point {
+	position: absolute;
+	left: 165px;
+	top: 90px;
+}
+
+
+.arrowhover .point:before, .arrowhover .point:after {
+	border: 1px solid #703254;
+	height: 25px;
+	content: "";
+	position: absolute;
+}
+
+
+.arrowhover .point:before {
+	top: -11px;
+	left: -11px;
+	transform:rotate(-74deg);
+	-webkit-transform:rotate(-74deg);
+  -moz-transform:rotate(-74deg);
+  -ms-transform: rotate(-74deg);
+}
+
+.arrowhover .point:after {
+  top: -20px;
+	left: 5px;
+	transform:rotate(12deg);
+	-webkit-transform: rotate(12deg);
+  -moz-transform:rotate(12deg);
+  -ms-transform: rotate(12deg);
+}
 
 
 
@@ -413,6 +469,16 @@ Lean Startup, it's better to start with practice.</span></p>
 
 <p style="text-align:center;color: rgb(198, 123, 165);"><span >You decide to open the first pet-friendly cafe where they serve the same food both for pets and pet-owners.</span></p>
 <p><br></p>
+
+
+ <div class="hoverme"> 
+    <p style="color: rgb(198, 123, 165);"> Hover to see examples </p>
+  </div>
+   <div class="arrowhover">
+      <div class="curve"></div>
+      <div class="point"></div>
+    </div>
+
 <div style="text-align: center;"><img src="https://vanillapup.com/wp-content/uploads/2018/08/RedDot-BrewHouse-Dempsey_Vanillapup@2x.jpeg" class="img-rounded" style="font-family: inherit; width: 469.741885625966px; height: 313px;">&nbsp; &nbsp;
 &nbsp;<img src="https://eatbook.sg/wp-content/uploads/2019/11/Pet-Friendly-Cafe-The-Garden-Slug-dog-982x1024.jpg" class="img-rounded" style="width: 295.2300098716683px; height: 308px;"></div>
 <p></p>
